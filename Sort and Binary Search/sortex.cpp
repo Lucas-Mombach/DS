@@ -26,5 +26,5 @@ int main(){
   {
     std::cout << array[i] << " ";
   }
-  
+  std::cout << "\n" << std::endl;
 }

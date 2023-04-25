@@ -1,7 +1,20 @@
 #include <iostream>
 #include <iomanip>
 
-void SelectionSort(int *array, int n){}
+void SelectionSort(int *array, int n){
+  for(int i = 0; i < n-1; i++)
+  {
+    for (int j = i; j < n; j++)
+    {
+      //smllst
+      //compare if smllst is bigger than other number
+      //swap them if the case
+      //smllst = other number
+    }
+    
+  }
+}
+  
   
 void sortationMethod(int *array, int n){
   SelectionSort(array,n);

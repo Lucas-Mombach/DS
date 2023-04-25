@@ -1,8 +1,22 @@
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
+
+void Bubble(int *array, int n){
+  for (int i = 0; i < n-1; i++)
+  {
+    for (int j = 0; j < n-i-1/*the first one the biggest goes to the last position, so it's not needed to try the last one*/; j++)
+    {
+      //if array[j] > array[j+1] then 
+      //array[j] swap with array[j+1]
+    }
+    
+  }
+  
+}
 
 void sortationMethod(int *array, int n){
-//cool implementation here
+  Bubble(array,n);
 }
 //same main for every sortation method
 int main(){
@@ -26,5 +40,5 @@ int main(){
   {
     std::cout << array[i] << " ";
   }
-  
+  std::cout << "\n" << std::endl;
 }

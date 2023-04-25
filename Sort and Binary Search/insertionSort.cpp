@@ -2,7 +2,7 @@
 #include <iomanip>
 
 void insertionSort(int *array, int n){}
-
+  
 void sortationMethod(int *array, int n){
   insertionSort(array,n);
 }

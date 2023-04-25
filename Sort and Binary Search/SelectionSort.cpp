@@ -2,16 +2,15 @@
 #include <iomanip>
 
 void SelectionSort(int *array, int n){
+  
   for(int i = 0; i < n-1; i++)
   {
-    for (int j = i; j < n; j++)
+    int smllst = i;
+    for (int j = i+1; j < n; j++)
     {
-      //smllst
-      //compare if smllst is bigger than other number
-      //swap them if the case
-      //smllst = other number
+      if (array[smllst]>array[j]) smllst = j;
     }
-    
+    std::swap(array[smllst],array[i]);
   }
 }
   

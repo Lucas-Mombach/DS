@@ -7,8 +7,8 @@ void Bubble(int *array, int n){
   {
     for (int j = 0; j < n-i-1/*the first one the biggest goes to the last position, so it's not needed to try the last one*/; j++)
     {
-      //if array[j] > array[j+1] then 
-      //array[j] swap with array[j+1]
+      if (array[j] > array[j+1])
+      std::swap(array[j],array[j+1]);
     }
     
   }

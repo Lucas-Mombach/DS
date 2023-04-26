@@ -1,8 +1,28 @@
 #include <iostream>
 #include <iomanip>
 
-void insertionSort(int *array, int n){}
+void insertionSort(int *array, int n){
+
+  for (int i = 0; i < n-1; i++)
+  {
+    int aux = array[i+1];
+    for (int j = i+1; j > 0; j--)
+    {
+      if (array[j] < array[j-1]) 
+      {
+
+        array[j] = array[j-1];
+        array[j-1] = aux;
+        
+
+      } 
+    }
+    
+  }
+   
+}
   
+
 void sortationMethod(int *array, int n){
   insertionSort(array,n);
 }

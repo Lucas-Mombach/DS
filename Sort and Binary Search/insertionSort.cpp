@@ -5,19 +5,13 @@ void insertionSort(int *array, int n){
 
   for (int i = 0; i < n-1; i++)
   {
-    int aux = array[i+1];
-    for (int j = i+1; j > 0; j--)
+    int aux = array[i];
+    int j = i;
+    for (j; (j > 0 && aux < array[j-1] ); j--)
     {
-      if (array[j] < array[j-1]) 
-      {
-
         array[j] = array[j-1];
-        array[j-1] = aux;
-        
-
-      } 
     }
-    
+    array[j] = aux;
   }
    
 }

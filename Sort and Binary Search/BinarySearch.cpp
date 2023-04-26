@@ -14,18 +14,22 @@ void SelectionSort(int *array, int n){
   }
 }
 int BinarySearch1(int *array,int beg,int end, int k ){
-  //if beg > end the array is empty so return -1;
-  // mid = beg + (end-beg)/2
-  // if k is bigger than mid then
-   // call  BinarySearch1 where beg is mid+1 
-  // if k is smaller than mid then
-    // call BinarySearch1 where end is mid-1
-  //if k is equal to mid then 
-    // returns mid
+
+  if(beg>=end) return -1;
+
+  int mid = beg+ (end-beg)/2;
+
+  if(k==array[mid])  return mid;
+  
+  if (k>array[mid]) return BinarySearch1(array,mid+1,end,k);
+
+  else return BinarySearch1(array,beg,mid,k);
+  
+ 
 }
 
 int BinarySearch(int *array,int n, int k ){
- return BinarySearch1(array,0,n-1,k);
+ return BinarySearch1(array,0,n,k);
 }
   
 void sortationMethod(int *array, int n){
@@ -57,5 +61,5 @@ int main(){
   int f = 5;
   int pos  = BinarySearch(array,n,f);
   std::cout << "Where is " << f << " in the array?" << std::endl;
-  std::cout << "The number" << f << " is in the position " << pos <<std::endl;
+  std::cout << "The number " << f << " is in the position " << pos <<std::endl;
 }

@@ -2,13 +2,25 @@
 #include <iomanip>
 #include <algorithm>
 void merge(int *array,int p, int q,int r){
-  //minus p and minus q 
+  // array aux
+  //min_p and min_q
+  int i=p;
+  //while (int i=p;min_p>=q && min_q>=r;)
+    // if(array[min_p]>= array[min_q]) then
+    //  array[i] = array[min_q];
+    // min_q++;
+    //i++;
+    // if(array[min_p]<= array[min_q])
+    //  array[i] = array[min_q];
+    //i++
+    // min_p++;
 }
 void mergeSort(int *array,int p,int r){
-  //get the middle with (r+p)/2
+  
+  //if p < r-1 then { get the middle with (r+p)/2
   //call mergeSort(array,p,q)
   //call mergeSort(array,q+1,r)
-  //call merge(array,p,mid,q)
+  //call merge(array,p,mid,q)}
 
 }
 

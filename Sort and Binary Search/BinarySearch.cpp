@@ -13,8 +13,19 @@ void SelectionSort(int *array, int n){
     std::swap(array[smllst],array[i]);
   }
 }
+int BinarySearch1(int *array,int beg,int end, int k ){
+  //if beg > end the array is empty so return -1;
+  // mid = beg + (end-beg)/2
+  // if k is bigger than mid then
+   // call  BinarySearch1 where beg is mid+1 
+  // if k is smaller than mid then
+    // call BinarySearch1 where end is mid-1
+  //if k is equal to mid then 
+    // returns mid
+}
+
 int BinarySearch(int *array,int n, int k ){
- return ;
+ return BinarySearch1(array,0,n-1,k);
 }
   
 void sortationMethod(int *array, int n){
